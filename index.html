@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="calc">
+            <div class="input">
+                <input type="text" id='query' autocomplete="off">
+            </div>
+            <div class="buttons">
+                <div class="button numbers b0" onclick="pressButton('0')">0</div>
+                <div class="button numbers b1" onclick="pressButton('1')">1</div>
+                <div class="button numbers b2" onclick="pressButton('2')">2</div>
+                <div class="button numbers b3" onclick="pressButton('3')">3</div>
+                <div class="button numbers b4" onclick="pressButton('4')">4</div>
+                <div class="button numbers b5" onclick="pressButton('5')">5</div>
+                <div class="button numbers b6" onclick="pressButton('6')">6</div>
+                <div class="button numbers b7" onclick="pressButton('7')">7</div>
+                <div class="button numbers b8" onclick="pressButton('8')">8</div>
+                <div class="button numbers b9" onclick="pressButton('9')">9</div>
+                <div class="button signs plus" onclick="pressButton('+')">+</div>
+                <div class="button signs minus" onclick="pressButton('-')">-</div>
+                <div class="button signs mul" onclick="pressButton('*')">x</div>
+                <div class="button signs divide" onclick="pressButton('/')">/</div>
+                <div class="button equal" onclick="getValue()">=</div>
+                <div class="button deci" onclick="pressButton('.')">.</div>
+                <div class="button C" onclick="clearScreen()">C</div>
+                <div class="button del" onclick="del()">
+                    <img src="/Img/backspace.svg" alt="backspaceIcon">
+                </div>
+                <div class="button %" onclick="pressButton('%')">mod</div>
+                <div class="button raiseto" onclick="pressButton('**')">^</div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
